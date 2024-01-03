@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
 
+
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-const Home = () => <div>Home Content</div>;
-const Leistungen = () => <div>Leistungen Content</div>;
-const Team = () => <div>Team Content</div>;
-const Kontakt = () => <div>Kontakt Content</div>;
-const Referenzen = () => <div>Referenzen Content</div>;
 
+const Home = () => {
+    return (
+        <div>
+            Hi
+        </div>
+    );
+};
 const ContentTab = () => {
     return (
         <div className="content-tab">
             <Routes>
                 <Route path="/home" component={Home} />
-                <Route path="/leistungen" component={Leistungen} />
-                <Route path="/team" component={Team} />
-                <Route path="/kontakt" component={Kontakt} />
-                <Route path="/referenzen" component={Referenzen} />
             </Routes>
         </div>
     );

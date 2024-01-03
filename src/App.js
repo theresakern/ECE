@@ -6,31 +6,21 @@ import ContentTab from './ContentTab';
 import './App.css';
 
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <ContentTab />
-      <Footer />
-    </div>
-  );
-} */
+*/
 
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Header';
 import ContentTab from './ContentTab';
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <Route path="/" component={ContentTab} />
-        <Footer />
-      </div>
-    </Router>
+    <div className="app">
+      <Header />
+      <ContentTab />
+      <Footer />
+    </div>
   );
-};
+}
 
 export default App;
